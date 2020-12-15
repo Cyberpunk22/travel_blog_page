@@ -1,0 +1,196 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* -------header----  */
+header{
+    background-color: whitesmoke;
+    display: flex;
+    padding: 5px 12% 5px 12%;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px ;
+}
+
+.logo {
+    color: rgb(184, 14, 119);
+    font-size: 2.5rem;
+    flex-grow: 1;
+    font-family: "Great vibes", "Arial";
+    
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    text-transform: uppercase;
+    padding-right: 40px;
+    font-size: 1.2rem;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header nav li a:hover{
+    cursor: pointer;
+    background-color: tomato;
+    padding: 10px 10px;
+    transition: background 1s;
+}
+
+
+/* ------ banner------ */
+
+#banner{
+    background-image: url("https://content.codecademy.com/courses/freelance-1/unit-6/project-morocco/banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    height: 45rem;
+    color: salmon;
+   
+}
+
+#banner h3{
+
+    padding: .55rem 0;
+    font-size: 1.44rem;
+    border-top: 4px solid salmon ;
+    border-bottom: 4px solid salmon ;
+    
+}
+
+#banner h1{
+    font-size: 11rem;
+ 
+    font-weight: 900;
+} 
+
+/* ----- content---- */
+
+
+
+.content{
+    background-color: rgb(254, 231,218);
+    color: #4a4a4a;
+    padding: 0 25% 4rem 25%;
+
+}
+
+.photo{
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 5px;
+    width: 75%;
+    margin: 0 auto 4.2rem auto;
+}
+
+.photo .image-container{
+    overflow: hidden;
+    margin-bottom: 1.11rem;
+}
+
+.photo .image-container img{
+    width: 100%;
+}
+
+.photo .caption {
+    font-style: italic;
+}
+
+.photo.first{
+    top: -5rem;
+    position: relative;
+    margin-bottom: 1.67rem;
+}
+
+.content p{
+    padding-bottom: 2.77rem;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    font-family: "Lato", "Arial", "Sans Serif";
+    
+} 
+
+.content .first-letter{
+    float: left;
+    font-size: 7rem;
+    padding-right: 1.4rem;
+    color: rgb(184, 14, 119);
+    line-height: 0.87;
+    font-family: Serif;
+}
+
+.quote{
+    font-size: 2rem;
+    text-align: center;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+    margin-bottom: 3rem;
+    display: block;
+
+}
+
+
+/* --------footer------ */
+footer{
+    display: flex;
+    align-items: center;
+    padding: 0 1%;
+    background-color: #212121;
+    color: gainsboro;
+    font-style: italic;
+}
+
+footer .image-container{
+    /* width: 400px; */
+}
+
+footer p{
+    padding-bottom: 1.66rem;
+}
+
+
+footer .content{
+    flex-grow: 1;
+}
+
+footer em{
+    color: rgb(243, 14, 129);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----@media only room---- */
+
+@media only screen and (max-width: 550px){
+    .header{
+        flex-direction: column;
+    }
+
+    .header .logo {
+        flex-grow: 0;
+    }
+}
